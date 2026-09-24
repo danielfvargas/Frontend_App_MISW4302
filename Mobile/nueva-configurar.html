@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Configurar alarma</title>
+<link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+<div class="phone">
+  <div class="bg-layer">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <div class="screen">
+    <div class="header with-back">
+      <a class="back-btn" href="nueva-plantilla.html">
+        <svg class="icon" viewBox="0 0 24 24" width="14" height="14"><path d="M15 6l-6 6 6 6"/></svg>
+      </a>
+      <h1>Configurar alarma</h1>
+    </div>
+
+    <div class="field">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" value="Vitaminas ya!">
+    </div>
+
+    <label style="display:block;font-size:11.5px;font-weight:700;color:var(--gray-700);margin-bottom:8px">Icono</label>
+    <div class="icon-grid">
+      <span class="icon-option selected">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-1.5 2-3 3.5-3 6a3 3 0 0 0 6 0c0-1-.3-1.8-.8-2.6.6.4 2.8 2.3 2.8 5.6a5 5 0 0 1-10 0c0-4.3 3.4-7.3 5-9z"/></svg>
+      </span>
+      <span class="icon-option">
+        <svg class="icon" viewBox="0 0 24 24"><g transform="rotate(45 12 12)"><rect x="6" y="9" width="12" height="6" rx="3"/><line x1="12" y1="9" x2="12" y2="15"/></g></svg>
+      </span>
+      <span class="icon-option">
+        <svg class="icon" viewBox="0 0 24 24"><line x1="7" y1="12" x2="17" y2="12"/><rect x="4" y="9" width="3" height="6" rx="1"/><rect x="17" y="9" width="3" height="6" rx="1"/><rect x="2" y="10.5" width="2" height="3" rx="0.5"/><rect x="20" y="10.5" width="2" height="3" rx="0.5"/></svg>
+      </span>
+      <span class="icon-option">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M6 11c0-3.3 2.7-6 6-6s6 2.7 6 6v3l1.5 2.5h-15L6 14z"/><path d="M10 19a2 2 0 0 0 4 0"/></svg>
+      </span>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="dosis">Dosis</label>
+        <input id="dosis" type="text" value="1 tableta">
+      </div>
+      <div class="field">
+        <label for="frecuencia">Frecuencia</label>
+        <select id="frecuencia">
+          <option>Diario</option>
+          <option>Entre semana</option>
+          <option>Semanal</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="hora">Hora</label>
+      <input id="hora" type="text" value="07:00 am">
+    </div>
+
+    <a class="link-inline" href="#">+ Agregar otro horario</a>
+
+    <a class="btn btn-primary" href="nueva-resumen.html">Continuar</a>
+  </div>
+</div>
+</body>
+</html>
