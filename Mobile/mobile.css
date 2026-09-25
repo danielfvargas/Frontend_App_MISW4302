@@ -411,3 +411,280 @@ a {
 .summary-row span:last-child {
   font-weight: 700;
 }
+
+/* alarma sonando, pantalla a color completo */
+
+.screen-teal {
+  background: var(--teal-500);
+  color: var(--white);
+  min-height: 100dvh;
+  max-width: 428px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 90px 24px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.ring-icon {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  margin: 0 auto 24px;
+}
+
+.screen-teal h1 {
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+.screen-teal .sub {
+  font-size: 12.5px;
+  opacity: 0.85;
+  margin: 0 0 30px;
+}
+
+.dose-big {
+  font-size: 46px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.retry-banner {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 10.5px;
+  margin-bottom: 40px;
+}
+
+/* confirmacion */
+
+.check-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--mint-300);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  margin: 8px auto 24px;
+}
+
+.center-title {
+  text-align: center;
+}
+
+.center-title h1 {
+  font-size: 24px;
+  margin: 0 0 6px;
+}
+
+.center-title p {
+  font-size: 12px;
+  color: var(--gray-500);
+  margin: 0 0 30px;
+}
+
+.streak-card {
+  text-align: center;
+  margin: 0 30px 24px;
+}
+
+.streak-card .icon {
+  color: var(--mint-300);
+  font-size: 26px;
+}
+
+.streak-card .num {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.motiv-banner {
+  background: var(--mint-100);
+  color: #0B6E57;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  font-size: 12.5px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* detalle de alarma */
+
+.detail-desc-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--gray-700);
+  margin-bottom: 4px;
+}
+
+.detail-desc {
+  font-size: 12px;
+  color: var(--ink);
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+
+hr.divider {
+  border: none;
+  border-top: 1px solid var(--gray-300);
+  margin: 18px 0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 12.5px;
+}
+
+.detail-row span:first-child {
+  color: var(--gray-500);
+}
+
+.detail-row span:last-child {
+  font-weight: 700;
+}
+
+.streak-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--mint-100);
+  border-radius: 999px;
+  padding: 8px 16px 8px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0B6E57;
+  margin: 18px 0;
+}
+
+.streak-pill .icon {
+  color: var(--mint-300);
+  font-size: 18px;
+}
+
+/* historial */
+
+.hist-kpis {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.hist-kpi {
+  flex: 1;
+  text-align: center;
+}
+
+.hist-kpi .icon {
+  font-size: 22px;
+}
+
+.hist-kpi .num {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 4px 0 2px;
+}
+
+.hist-kpi .label {
+  font-size: 9.5px;
+  color: var(--gray-500);
+}
+
+.cal-head {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.cal-grid .dow {
+  font-size: 9px;
+  color: var(--gray-500);
+}
+
+.cal-day {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9.5px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 30px;
+}
+
+.cal-day.ok {
+  background: var(--mint-300);
+  color: var(--white);
+}
+
+.cal-day.fail {
+  border: 1.2px solid var(--gray-300);
+  color: var(--gray-500);
+}
+
+.legend {
+  display: flex;
+  gap: 18px;
+  margin: 16px 0 24px;
+  font-size: 10.5px;
+  color: var(--gray-700);
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.ok {
+  background: var(--mint-300);
+}
+
+.dot.fail {
+  border: 1.2px solid var(--gray-300);
+}
+
+/* boton cerrar (X) */
+
+.close-x {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  color: var(--teal-500);
+  z-index: 2;
+}
+
+.close-x .icon {
+  width: 22px;
+  height: 22px;
+  stroke-width: 2.4;
+}
